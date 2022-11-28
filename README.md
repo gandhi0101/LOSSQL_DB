@@ -3,7 +3,7 @@ Proyecto escolar para implementar una DB en una aplicacion
 
 
 
-hacer la rama para front y back 
+hacer el uso correcto para las ramas front y back 
 
 evitar usar la rama principal
 
