@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.40" multi-file="no" uid="simpcc03e39b10984d298bde8109cecbc6b5">
+  <meta>
+    <name>modelo_logico_certificaciones</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="erd-entity" type="Entity" />
+        <value>9</value>
+      </counter>
+      <counter>
+        <item-type type-id="drawing-shape" type="Simple Shape" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>422</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-entity" type="Entity" />
+        <value>10</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-relationship" type="Relationship" />
+        <value>14</value>
+      </counter>
+      <counter>
+        <item-type type-id="drawing-shape" type="Simple Shape" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.EntityRelationshipDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
+        <value>29</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-eac32618a88d4d6e8461022c12ad47fc" name="" task-id-sequence="0">
+    <working-schedule uid="ws-ec47d488f3724d87a3e2354bf88278fb" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-8ecf3acbbd7444bb9d0d1fe7e94e3068" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-055b9f50250e48549adf082fec3a581d" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="varchar" tid="" name="varchar" description="" />
+        <type id="NOT" tid="" name="NOT" description="" />
+        <type id="float" tid="" name="float" description="" />
+        <type id="numeric" tid="" name="numeric" description="" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p8530bd50dcc1405fb3366916ba8b66b6_888716375" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>11/28/2022 15:20:59</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="entity-relationship" id="pfcfb0d0b45e845aa966925c3b2302e1a_708074761" name="EntityRelationshipDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-463,-136" zoom="0.3325949">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/28/2022 15:20:59</creation-date>
+          <change-date>11/28/2022 15:44:52</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="d8b52e66f0114c01a3a984867b124663" cid="REL006" type="erd-relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:39:57" from="a09579b2b82d45f181a66ce86f1765e4" to="8cbc61d46e354033b24b82472742791b">
+            <erd-relation type="Identifying" multiplicity-from="" multiplicity-to="">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="b50d09b2ec254137a82b5807838cb232" cid="ENT005" type="erd-entity" name="usuarios" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:31:34">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a12d83064aa284b3a914e7c26f1205093803" cid="EA015" name="correo" type="varchar" type-id="varchar" type-size="30" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:31:44" />
+              <attribute uid="ae11f49623e4c4c6cbefb305673773e53442" cid="EA016" name="contrasena" type="varchar" type-id="varchar" type-size="30" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:31:50" />
+              <attribute uid="a8302714b32f8424a9e4a5651bf3c2bde106" cid="EA017" name="nombre" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:31:54" />
+              <attribute uid="a1a663b733f6645218ff0f082f2c5e8c8906" cid="EA018" name="clave_especialidad" type="varchar" type-id="varchar" type-size="20" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:32:16" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="46eecdba7abe40bb8cc9f420b4472f1f" cid="REL001" type="erd-relationship" name="contiene" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:23:28" from="aefe92ea18634652a811edc63c07a98f" to="e00c8586afa0473885a1d3907fc125ac">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="a91c73ad794144aa851d2b787cade28a" cid="ENT007" type="erd-entity" name="adminstradores" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:34:13">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="ae7c9db80112a410cb77370a48afa226529" cid="EA021" name="nombre" type="varchar" type-id="varchar" type-size="50" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:36:19" />
+              <attribute uid="a9dda2f093e834d449b92c070dd016bc3900" cid="EA022" name="clave" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:36:09" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="06df650d133e49129a75aeccd8cdeb3e" cid="REL009" type="erd-relationship" name="crea" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:40:52" from="e00c8586afa0473885a1d3907fc125ac" to="36fc174d99ae4ce98bb15611550a5e07">
+            <erd-relation type="Identifying" multiplicity-from="1..*" multiplicity-to="1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="bf5d1585612c4b11a030a4b16b10b878" cid="REL013" type="erd-relationship" name="gestiona" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:44:52" from="aefe92ea18634652a811edc63c07a98f" to="a91c73ad794144aa851d2b787cade28a">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="e00c8586afa0473885a1d3907fc125ac" cid="ENT002" type="erd-entity" name="examenes" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:22:33">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a2532c21c7fd94c2792d7588c8ad755a7834" cid="EA004" name="materia" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:22:49" />
+              <attribute uid="a01fdd450b1d046b7b99d4ec2996645af171" cid="EA005" name="preguntas" type="varchar" type-id="varchar" type-size="1000" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:22:54" />
+              <attribute uid="a9da91cfeb1174a6e842a122c9fc12fdb396" cid="EA006" name="respuestas" type="varchar" type-id="varchar" type-size="1000" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:23:00" />
+              <attribute uid="aa78ebac2fc024b44bf056606c90e4b60122" cid="EA007" name="folio" type="Char" type-id="Uml.Char" type-size="6" foreign-key="false" primary-key="true" nullable="true" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:23:06" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="a09579b2b82d45f181a66ce86f1765e4" cid="ENT006" type="erd-entity" name="estudiantes" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:33:45">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="ae8d313cb102043b394b808f0d38b3f4b123" cid="EA019" name="nombre" type="varchar" type-id="varchar" type-size="50" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:35:20" />
+              <attribute uid="a5a79ad100fdf4aed91b2bdf89b305c368" cid="EA020" name="clave" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:35:35" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="e66db74c23d14ede856973f8da4c6bd0" cid="REL007" type="erd-relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:40:25" from="36fc174d99ae4ce98bb15611550a5e07" to="8cbc61d46e354033b24b82472742791b">
+            <erd-relation type="Identifying" multiplicity-from="" multiplicity-to="">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="36fc174d99ae4ce98bb15611550a5e07" cid="ENT008" type="erd-entity" name="profesores" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:34:52">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a030bf0ff726f486b842bce2ba39dcda475" cid="EA023" name="nombre" type="varchar" type-id="varchar" type-size="50" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:36:39" />
+              <attribute uid="ad8c5f7f516ce4324b3f6833e941d58cf90" cid="EA024" name="clave" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:36:38" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="9c6bdc6695ab4aaba4c7743df43aa566" cid="ENT004" type="erd-entity" name="fecha_aplicacion" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:26:46">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="c608eb11c3ff45c5ae54c9fd33e44691" cid="REL012" type="erd-relationship" name="produce" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:44:03" from="a09579b2b82d45f181a66ce86f1765e4" to="af01ae2e6e8a44db91c3b99877350ada">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="a39ef2ba59f74c2f9e7036b833497dc1" cid="REL010" type="erd-relationship" name="evaluan" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:41:45" from="e00c8586afa0473885a1d3907fc125ac" to="a09579b2b82d45f181a66ce86f1765e4">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="fe5f3642041c4be084b9375f50f6f3d3" cid="REL011" type="erd-relationship" name="compra" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:42:41" from="15b61aa8663644aab94ecdff043fb971" to="a09579b2b82d45f181a66ce86f1765e4">
+            <erd-relation type="Identifying" multiplicity-from="0..*" multiplicity-to="1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="aefe92ea18634652a811edc63c07a98f" cid="ENT001" type="erd-entity" name="aplicacion" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:21:21">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a230362b8e7b74200a8e8b3bbe41dba2f795" cid="EA001" name="nombre" type="varchar" type-id="varchar" type-size="50" foreign-key="false" primary-key="false" nullable="true" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:21:36" />
+              <attribute uid="a8574fa18e3994c1dae54522749d33c8b567" cid="EA002" name="rfc" type="Char" type-id="Uml.Char" type-size="9" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:21:38" />
+              <attribute uid="a3d9acf14412f494eba4aebe89e4284bc740" cid="EA003" name="logo" type="varchar" type-id="varchar" type-size="30" foreign-key="false" primary-key="false" nullable="true" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:21:44" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="4e78533d85b5421d949f72c6d51d45cb" cid="REL008" type="erd-relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:40:29" from="a91c73ad794144aa851d2b787cade28a" to="8cbc61d46e354033b24b82472742791b">
+            <erd-relation type="Identifying" multiplicity-from="" multiplicity-to="">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="8cbc61d46e354033b24b82472742791b" cid="ELEM002" type="drawing-shape" name="SimpleShape1" style-class="Flat Light Cyan" change-tracking-state="added" creator="" creation-date="11/28/2022 15:38:48">
+            <style class="Flat Light Cyan" />
+            <drawing>
+              <text>d
+</text>
+            </drawing>
+            <drawing-shape type="Ellipse" />
+          </item>
+          <item id="af01ae2e6e8a44db91c3b99877350ada" cid="ENT009" type="erd-entity" name="ventas" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:43:25">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a23e8f50415e44818ac7a0278ae00b1f2437" cid="EA025" name="folio" type="Char" type-id="Uml.Char" type-size="6" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:43:36" />
+              <attribute uid="a3ade3c302be749539fc9a1d73261d4f623" cid="EA026" name="producto" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:43:44" />
+              <attribute uid="ad13db5c81b5f4a4fab104a2dbd78cae0544" cid="EA027" name="precio" type="float" type-id="float" type-size="10,2" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:43:49" />
+              <attribute uid="ad03cafe7529f4ab6b2d6591a71b867ad54" cid="EA028" name="cantidad" type="Integer" type-id="Uml.Integer" type-size="9" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:43:58" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="339d821125764b28a10056801a260502" cid="REL002" type="erd-relationship" name="vende" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:27:49" from="aefe92ea18634652a811edc63c07a98f" to="15b61aa8663644aab94ecdff043fb971">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="9ce9481b7a24487f8ae265a7dbf6de0d" cid="REL003" type="erd-relationship" name="tiene" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:37:53" from="aefe92ea18634652a811edc63c07a98f" to="b50d09b2ec254137a82b5807838cb232">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="0a4d8474327f4c6cb13112c8090ac16e" cid="REL005" type="erd-relationship" name="especializa" style-class="" change-tracking-state="added" creator="" creation-date="11/28/2022 15:39:34" from="b50d09b2ec254137a82b5807838cb232" to="8cbc61d46e354033b24b82472742791b">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="15b61aa8663644aab94ecdff043fb971" cid="ENT003" type="erd-entity" name="certificaciones" style-class="Flat Blue" change-tracking-state="added" creator="" creation-date="11/28/2022 15:24:39">
+            <style class="Flat Blue" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a02944d18ae1a4d259d8a9f71bbaba418753" cid="EA008" name="costo" type="numeric" type-id="numeric" type-size="10,2" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:24:57" />
+              <attribute uid="a4b6f2f536e0c4c61a8bd2972cc6503ec355" cid="EA009" name="descripcion" type="varchar" type-id="varchar" type-size="500" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:25:03" />
+              <attribute uid="a96696ba81a5f4acda811829c61ab9120103" cid="EA010" name="lenguaje" type="varchar" type-id="varchar" type-size="20" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:25:11" />
+              <attribute uid="ab3d96f2f50f5487ea1a6d71bf1d1b50e944" cid="EA011" name="folio" type="Char" type-id="Uml.Char" type-size="6" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:25:15" />
+              <attribute uid="a5086efaba64c40fe8ea417622eb170ba285" cid="EA012" name="disponibilidad" type="varchar" type-id="varchar" type-size="10" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:25:46" />
+              <attribute uid="a0502c756160f4d9d942f44b53cae5138170" cid="EA013" name="vacantes" type="Integer" type-id="Uml.Integer" type-size="9" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" creation-date="11/28/2022 15:25:58" />
+            </attributes>
+            <indexes />
+          </item>
+        </abstract-items>
+        <layer id="978939f158c246b6a3fea84de65cfc35" name="Default" visible="true" enabled="true" locked="false">
+          <item id="aefe92ea18634652a811edc63c07a98f" iid="fe2434c020c043bbbb39029053412091" creation-date="11/28/2022 15:21:21" order-index="0" type="entity">
+            <layout ax="3" ay="-54" awidth="188" aheight="105" x="3" y="-54" width="188" height="105" rotation-center="22,72" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="e00c8586afa0473885a1d3907fc125ac" iid="9c2bf42da528463780d2a2292f43d4b9" creation-date="11/28/2022 15:22:33" order-index="1" type="entity">
+            <layout ax="1123" ay="256" awidth="220" aheight="143.5" x="1123" y="256" width="220" height="143.5" rotation-center="-39,23.75" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="46eecdba7abe40bb8cc9f420b4472f1f" iid="a7628e8c43a74472825c2beed3144ca6" creation-date="11/28/2022 15:23:28" order-index="2" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="191" y1="25" x2="1123" y2="296" start-border-pos="0.438824612753732" end-border-pos="0.930233839081555" name-position="0,20">
+              <points>
+                <point x="191" y="25" />
+                <point x="1123" y="296" />
+              </points>
+            </layout>
+            <relation from="aefe92ea18634652a811edc63c07a98f" from-iid="fe2434c020c043bbbb39029053412091" to="e00c8586afa0473885a1d3907fc125ac" to-iid="9c2bf42da528463780d2a2292f43d4b9" />
+          </item>
+          <item id="15b61aa8663644aab94ecdff043fb971" iid="8ed370d7c752485f89dca9ca2f2201d9" creation-date="11/28/2022 15:24:39" order-index="3" type="entity">
+            <layout ax="1561.5" ay="-81" awidth="248" aheight="159" x="1561.5" y="-81" width="248" height="159" rotation-center="-7,0.5" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="339d821125764b28a10056801a260502" iid="644594f5f4fe4948baa12eb9449c9dd4" creation-date="11/28/2022 15:27:49" order-index="4" type="relation">
+            <layout start-role-position="24.99999,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="191" y1="-2" x2="1562" y2="-2" start-border-pos="0.373809523809524" end-border-pos="0.875786163522013" name-position="0,20">
+              <points>
+                <point x="191" y="-2" />
+                <point x="1562" y="-2" />
+              </points>
+            </layout>
+            <relation from="aefe92ea18634652a811edc63c07a98f" from-iid="fe2434c020c043bbbb39029053412091" to="15b61aa8663644aab94ecdff043fb971" to-iid="8ed370d7c752485f89dca9ca2f2201d9" />
+          </item>
+          <item id="b50d09b2ec254137a82b5807838cb232" iid="faf8dc794a7b4d7dac2dfa9d766b69de" creation-date="11/28/2022 15:31:34" order-index="5" type="entity">
+            <layout ax="-33" ay="261.6719" awidth="260" aheight="132.1563" x="-33" y="261.6719" width="260" height="132.1563" rotation-center="12.5,13.42188" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="a09579b2b82d45f181a66ce86f1765e4" iid="65e4505d1faf4ed9b7c15b04acf2db3e" creation-date="11/28/2022 15:33:45" order-index="6" type="entity">
+            <layout ax="1573" ay="699.625" awidth="225" aheight="108.25" x="1573" y="699.625" width="225" height="108.25" rotation-center="-41.5,25.375" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="a91c73ad794144aa851d2b787cade28a" iid="53557481838c425a9455e89ee093a447" creation-date="11/28/2022 15:34:13" order-index="7" type="entity">
+            <layout ax="-711" ay="-54" awidth="231" aheight="105" x="-711" y="-54" width="231" height="105" rotation-center="45,27.25" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="36fc174d99ae4ce98bb15611550a5e07" iid="79d8e367b6474fe69471456950a43dcf" creation-date="11/28/2022 15:34:52" order-index="8" type="entity">
+            <layout ax="446" ay="275.0938" awidth="220" aheight="105.3125" x="446" y="275.0938" width="220" height="105.3125" rotation-center="-39,27.09375" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="9ce9481b7a24487f8ae265a7dbf6de0d" iid="f6979ccab28f4ad09567c2c2547c50af" creation-date="11/28/2022 15:37:53" order-index="9" type="relation">
+            <layout start-role-position="25,14" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="97" y1="51" x2="97" y2="262" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+              <points>
+                <point x="97" y="51" />
+                <point x="97" y="262" />
+              </points>
+            </layout>
+            <relation from="aefe92ea18634652a811edc63c07a98f" from-iid="fe2434c020c043bbbb39029053412091" to="b50d09b2ec254137a82b5807838cb232" to-iid="faf8dc794a7b4d7dac2dfa9d766b69de" />
+          </item>
+          <item id="8cbc61d46e354033b24b82472742791b" iid="2a81c726a75743c197bc36226a17c8d4" creation-date="11/28/2022 15:38:48" order-index="10" type="entity">
+            <layout ax="88.75" ay="725" awidth="16.5" aheight="57.5" x="88.75" y="725" width="16.5" height="57.5" rotation-center="62,-50.75" />
+          </item>
+          <item id="0a4d8474327f4c6cb13112c8090ac16e" iid="166ad010721747b3997aca32977d7947" creation-date="11/28/2022 15:39:34" order-index="11" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="97" y1="394" x2="97" y2="725" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+              <points>
+                <point x="97" y="394" />
+                <point x="97" y="725" />
+              </points>
+            </layout>
+            <relation from="b50d09b2ec254137a82b5807838cb232" from-iid="faf8dc794a7b4d7dac2dfa9d766b69de" to="8cbc61d46e354033b24b82472742791b" to-iid="2a81c726a75743c197bc36226a17c8d4" />
+          </item>
+          <item id="d8b52e66f0114c01a3a984867b124663" iid="7c227c36944749ddb33f0572770bb3e5" creation-date="11/28/2022 15:39:57" order-index="12" type="relation">
+            <layout start-role-position="25.00001,14.99998" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1573" y1="754" x2="105" y2="754" start-border-pos="0.874422632794457" end-border-pos="0.376086956521739" name-position="0,20">
+              <points>
+                <point x="1573" y="754" />
+                <point x="105" y="754" />
+              </points>
+            </layout>
+            <relation from="a09579b2b82d45f181a66ce86f1765e4" from-iid="65e4505d1faf4ed9b7c15b04acf2db3e" to="8cbc61d46e354033b24b82472742791b" to-iid="2a81c726a75743c197bc36226a17c8d4" />
+          </item>
+          <item id="e66db74c23d14ede856973f8da4c6bd0" iid="a0c21263b06240febb81793427636346" creation-date="11/28/2022 15:40:25" order-index="13" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="500" y1="380" x2="105" y2="747" start-border-pos="0.688668372414329" end-border-pos="0.34380519701087" name-position="0,20">
+              <points>
+                <point x="500" y="380" />
+                <point x="105" y="747" />
+              </points>
+            </layout>
+            <relation from="36fc174d99ae4ce98bb15611550a5e07" from-iid="79d8e367b6474fe69471456950a43dcf" to="8cbc61d46e354033b24b82472742791b" to-iid="2a81c726a75743c197bc36226a17c8d4" />
+          </item>
+          <item id="4e78533d85b5421d949f72c6d51d45cb" iid="aa3bd13f67634f6fb6aaad2725cab901" creation-date="11/28/2022 15:40:29" order-index="14" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="-547" y1="51" x2="89" y2="744" start-border-pos="0.572961782480215" end-border-pos="0.916600766389266" name-position="0,20">
+              <points>
+                <point x="-547" y="51" />
+                <point x="89" y="744" />
+              </points>
+            </layout>
+            <relation from="a91c73ad794144aa851d2b787cade28a" from-iid="53557481838c425a9455e89ee093a447" to="8cbc61d46e354033b24b82472742791b" to-iid="2a81c726a75743c197bc36226a17c8d4" />
+          </item>
+          <item id="06df650d133e49129a75aeccd8cdeb3e" iid="e40c0a63ed6f495990243b719180a945" creation-date="11/28/2022 15:40:52" order-index="15" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1123" y1="328" x2="666" y2="328" start-border-pos="0.874564459930314" end-border-pos="0.375593471810089" name-position="0,20">
+              <points>
+                <point x="1123" y="328" />
+                <point x="666" y="328" />
+              </points>
+            </layout>
+            <relation from="e00c8586afa0473885a1d3907fc125ac" from-iid="9c2bf42da528463780d2a2292f43d4b9" to="36fc174d99ae4ce98bb15611550a5e07" to-iid="79d8e367b6474fe69471456950a43dcf" />
+          </item>
+          <item id="a39ef2ba59f74c2f9e7036b833497dc1" iid="c1733eca6a7b4e06ba8a3f962fc4c54c" creation-date="11/28/2022 15:41:45" order-index="16" type="relation">
+            <layout start-role-position="24.99998,15.00003" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1308" y1="400" x2="1629" y2="700" start-border-pos="0.539204545454545" end-border-pos="0.0617526584201389" name-position="0,20">
+              <points>
+                <point x="1308" y="400" />
+                <point x="1629" y="700" />
+              </points>
+            </layout>
+            <relation from="e00c8586afa0473885a1d3907fc125ac" from-iid="9c2bf42da528463780d2a2292f43d4b9" to="a09579b2b82d45f181a66ce86f1765e4" to-iid="65e4505d1faf4ed9b7c15b04acf2db3e" />
+          </item>
+          <item id="fe5f3642041c4be084b9375f50f6f3d3" iid="752aa9ee58c543f1b6371e185cfe44d9" creation-date="11/28/2022 15:42:41" order-index="17" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-14" line-style="oblique" lock-to-fields="false" auto-path="" x1="1686" y1="78" x2="1686" y2="700" start-border-pos="0.624495967741935" end-border-pos="0.125555555555556" name-position="0,20">
+              <points>
+                <point x="1686" y="78" />
+                <point x="1686" y="700" />
+              </points>
+            </layout>
+            <relation from="15b61aa8663644aab94ecdff043fb971" from-iid="8ed370d7c752485f89dca9ca2f2201d9" to="a09579b2b82d45f181a66ce86f1765e4" to-iid="65e4505d1faf4ed9b7c15b04acf2db3e" />
+          </item>
+          <item id="af01ae2e6e8a44db91c3b99877350ada" iid="692930cc818744a4af0072c55d06d7c1" creation-date="11/28/2022 15:43:25" order-index="18" type="entity">
+            <layout ax="2190" ay="687.75" awidth="231" aheight="132" x="2190" y="687.75" width="231" height="132" rotation-center="-44.5,13.75" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="c608eb11c3ff45c5ae54c9fd33e44691" iid="f0c6ebf084884ea6bda4a499c3714bb4" creation-date="11/28/2022 15:44:03" order-index="19" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1798" y1="754" x2="2190" y2="754" start-border-pos="0.375577367205543" end-border-pos="0.874526515151515" name-position="0,20">
+              <points>
+                <point x="1798" y="754" />
+                <point x="2190" y="754" />
+              </points>
+            </layout>
+            <relation from="a09579b2b82d45f181a66ce86f1765e4" from-iid="65e4505d1faf4ed9b7c15b04acf2db3e" to="af01ae2e6e8a44db91c3b99877350ada" to-iid="692930cc818744a4af0072c55d06d7c1" />
+          </item>
+          <item id="bf5d1585612c4b11a030a4b16b10b878" iid="e2359d4d15994a5384ca247582664a3c" creation-date="11/28/2022 15:44:52" order-index="20" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="3" y1="-2" x2="-480" y2="-2" start-border-pos="0.876190476190476" end-border-pos="0.373809523809524" name-position="0,20">
+              <points>
+                <point x="3" y="-2" />
+                <point x="-480" y="-2" />
+              </points>
+            </layout>
+            <relation from="aefe92ea18634652a811edc63c07a98f" from-iid="fe2434c020c043bbbb39029053412091" to="a91c73ad794144aa851d2b787cade28a" to-iid="53557481838c425a9455e89ee093a447" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
