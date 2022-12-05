@@ -53,10 +53,10 @@ p {
 
                 $myemail = mysqli_real_escape_string($db,$_POST['email']);
                 $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-                $myname = mysqli_real_escape_string($db,$_POST['name']);
+                $myname = md5( mysqli_real_escape_string($db,$_POST['name']));
 
                 $result = $db->prepare(signIn());
-                $result->bind_param("sss",$myemail,md5($mypassword),$myname);
+                $result->bind_param("sss",$myemail,$mypassword,$myname);
                 $result->execute();      
                 if ($result) {
                     ?>
