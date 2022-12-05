@@ -12,8 +12,8 @@
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Link To CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="../css/styles.css">
+    
 </head>
 
 <body>
@@ -35,9 +35,13 @@
 
             <?php 
             }  else {
+
                 ?>
-                    <li><a href="sessions" class="login">Cuenta</a></li>
+                    <li><a href="sessions" ><?php echo $_SESSION['email'];  ?></a></li>
+                    <li><a href="sessions/logOut.php" ></a></li>
+
                 <?php
+
             } 
             ?>
             <!-- Dark Mode -->
@@ -80,3 +84,8 @@
         </script>
     </header>
 
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="../js/script.js"></script>

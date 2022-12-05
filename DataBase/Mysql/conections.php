@@ -13,5 +13,9 @@
    function signIn(){
     return "INSERT INTO  usuarios ( correo ,  contrasena ,  nombre  ) VALUES (?,?,?)";
    }
+   function getname(){
+      return "SELECT correo, contrasena FROM usuarios WHERE nombre = (?)";
+      
+     }
 
 ?>

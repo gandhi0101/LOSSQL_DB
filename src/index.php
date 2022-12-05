@@ -53,8 +53,9 @@
             <h2>Lista de Cursos</h2>
         </div>
         <div class="menu-container">
+            <!-- hacer que los enlaces te dirijan al modal para iniciar session si no se ah logeado-->
             <!-- Box 1 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/python.jpeg" alt="">
                 </div>
@@ -62,9 +63,9 @@
                 <h3></h3>
                 <span>$350</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 2 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/c++.jpg" alt="">
                 </div>
@@ -72,9 +73,9 @@
                 <h3></h3>
                 <span>$450.90</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 3 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/php.jpg" alt="">
                 </div>
@@ -82,9 +83,9 @@
                 <h3></h3>
                 <span>$510.05</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 4 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/javascript.jpg" alt="">
                 </div>
@@ -92,7 +93,7 @@
                 <h3></h3>
                 <span>$510.05</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
         </div>
     </section>
 

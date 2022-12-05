@@ -25,6 +25,8 @@ p {
 </style>
 
 <body>
+<?php include("../layout/header.php"); ?>
+
     <!--formulario de registro-->
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <p>correo</p>

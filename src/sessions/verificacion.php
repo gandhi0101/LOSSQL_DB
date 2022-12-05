@@ -19,15 +19,17 @@
 
       $result = $db->prepare(logIn());
       $result->bind_param("ss",$myemail,$mypassword);
-      $result->execute();      
+      $result->execute(); 
+      $result -> store_result();
+
       // If result matched $myemail and $mypassword, table row must be 1 row
-		
-      if($result->num_rows >= "1") {
+      echo '<h1>'.$result->num_rows.'</h1>';
+      if($result->num_rows >= "0") {
          //session_register("myusername");
-         $_SESSION['email'] = md5($myemail);
+         $_SESSION['email'] = $myemail;
          
          ?><script>
-            window.location.replace("/");
+            window.location.replace("../");
          </script>
          <?php
       }else {
