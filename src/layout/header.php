@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,7 +28,18 @@
             <li><a href="#menu">Cursos</a></li>
             <li><a href="#services">Servicio</a></li>
             <li><a href="#contact">Contacto</a></li>
-            <li><a href="#" class="login">Iniciar sesión</a></li>
+            <?php   if (!isset($_SESSION['email'])) {
+            ?>
+
+                <li><a href="#" class="login">Iniciar sesión</a></li>
+
+            <?php 
+            }  else {
+                ?>
+                    <li><a href="sessions" class="login">Cuenta</a></li>
+                <?php
+            } 
+            ?>
             <!-- Dark Mode -->
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
@@ -34,8 +48,8 @@
             <div class="modal__container">
                 <h2 class="modal__title">¡Inicia Sesión!</h2>
                 <form class="form" action="sessions/verificacion.php" method="post">
-                    <p><label for="username">Usuario</label> </p>
-                    <p> <input type="text" name="username"> </p>
+                    <p><label for="email">E-mail</label> </p>
+                    <p> <input type="text" name="email"> </p>
                     <p> <label for="password">password</label> </p>
                     <p>
                         <input type="password" name="password">
@@ -43,7 +57,7 @@
                     <p><label class="form-check-label" for="remember">Recordar</label></p>
                     <p> <input class="remember" type="checkbox" name="remember"></p>
 
-                    <p><input class="send" type="submit" value="Ingresar"> </p>
+                    <p><input class="send" name="send" type="submit" value="Ingresar"> </p>
                 </form>
                 <a href="#" class="modal__close">Cerrar</a>
             </div>

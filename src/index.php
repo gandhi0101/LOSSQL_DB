@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php include("layout/header.html"); ?>
+<?php include("layout/header.php"); ?>
 
 
 

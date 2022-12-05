@@ -11,22 +11,25 @@
    include("../../DataBase/Mysql/conections.php");
    session_start();
    
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
+   if(isset($_POST['send'])) {
       // username and password sent from form 
       
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      $myemail = mysqli_real_escape_string($db,$_POST['email']);
+      $mypassword = md5(mysqli_real_escape_string($db,$_POST['password']));
 
       $result = $db->prepare(logIn());
-      $result->bind_param("ss",$myusername,md5($mypassword));
+      $result->bind_param("ss",$myemail,$mypassword);
       $result->execute();      
-      // If result matched $myusername and $mypassword, table row must be 1 row
+      // If result matched $myemail and $mypassword, table row must be 1 row
 		
       if($result->num_rows >= "1") {
          //session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
+         $_SESSION['email'] = md5($myemail);
          
-         header("location: ../sessions");
+         ?><script>
+            window.location.replace("/");
+         </script>
+         <?php
       }else {
          //$error = "Your Login Name or Password is invalid";
          ?>
@@ -34,7 +37,7 @@
         <!-- hacer un menu para corregir las credenciales y preguntar si tiene cuenta se registre -->
         
 
-        <a href="sign_in.php">ya tienes cuenta</a>
+        <a href="sign_in.php">ya tienes cuenta?</a>
 
         <?php
       }
