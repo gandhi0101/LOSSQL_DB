@@ -14,57 +14,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <a href="" class="logo">Data Developer</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Acerca de nosotros</a></li>
-            <li><a href="#menu">Cursos</a></li>
-            <li><a href="#services">Servicio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#" class="login">Iniciar sesión</a></li>
-            <!-- Dark Mode -->
-            <div class="bx bx-moon" id="darkmode"></div>
-        </ul>
-
-        <div class="modal">
-            <div class="modal__container">
-                <h2 class="modal__title">¡Inicia Sesión!</h2>
-                <form class="form" action="verificacion.php" method="post">
-                    <p><label for="username">Usuario</label> </p>
-                    <p> <input type="text" name="username"> </p>
-                    <p> <label for="password">password</label> </p>
-                    <p>
-                        <input type="password" name="password">
-                    </p>
-                    <p><label class="form-check-label" for="remember">Recordar</label></p>
-                    <p> <input class="remember" type="checkbox" name="remember"></p>
-
-                    <p><input class="send" type="submit" value="Ingresar"> </p>
-                </form>
-                <a href="#" class="modal__close">Cerrar</a>
-            </div>
-        </div>
-
-        <script>
-            const openModal = document.querySelector('.login');
-            const modal = document.querySelector('.modal');
-            const closeModal = document.querySelector('.modal__close');
-
-            openModal.addEventListener('click', (e) => {
-                e.preventDefault();
-                modal.classList.add('modal--show');
-            });
-
-            closeModal.addEventListener('click', (e) => {
-                e.preventDefault();
-                modal.classList.remove('modal--show');
-            });
-        </script>
-    </header>
+<?php include("layout/header.php"); ?>
 
 
 
@@ -103,8 +53,9 @@
             <h2>Lista de Cursos</h2>
         </div>
         <div class="menu-container">
+            <!-- hacer que los enlaces te dirijan al modal para iniciar session si no se ah logeado-->
             <!-- Box 1 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/python.jpeg" alt="">
                 </div>
@@ -112,9 +63,9 @@
                 <h3></h3>
                 <span>$350</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 2 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/c++.jpg" alt="">
                 </div>
@@ -122,9 +73,9 @@
                 <h3></h3>
                 <span>$450.90</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 3 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/php.jpg" alt="">
                 </div>
@@ -132,9 +83,9 @@
                 <h3></h3>
                 <span>$510.05</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
             <!-- Box 4 -->
-            <div class="box">
+            <a  <?php if(!isset($_SESSION['email'])) echo 'class="login" href="#"'; else echo 'href="sessions/pay.php"'; ?>><div class="box">
                 <div class="box-img">
                     <img src="Img/javascript.jpg" alt="">
                 </div>
@@ -142,7 +93,7 @@
                 <h3></h3>
                 <span>$510.05</span>
                 <i class='bx bx-cart-alt'></i>
-            </div>
+            </div></a>
         </div>
     </section>
 
