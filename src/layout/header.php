@@ -19,8 +19,8 @@
 <body>
     <!-- Navbar -->
     <header>
-        <img src="/src/Img/Logiin.png" alt="" srcset="">
-        <a href="" class="logo">Data Developer</a>
+        <img src="/src/Img/Logiin.png" width="60" alt="" srcset="">
+        <a href="https://lossqls.000webhostapp.com/LOSSQL_DB/src/" class="logo">Data Developer</a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
