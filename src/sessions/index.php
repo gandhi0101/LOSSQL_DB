@@ -42,9 +42,8 @@
         <div class="about-text">
             <span>Acerca de Nosotros</span>
             <h2> <br></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo iure rem ducimus tenetur deserunt
-                commodi doloribus, quibusdam vel fuga?</p>
-            <a href="#" class="btn">Ver más</a>
+            <p>Somos una empresa enfocada en formar a los desarrolladores del futuro, comprometiendonos con su formacion, brindandoles las herramientas necesarias para la resolucion de problemas en la vida diaria.</p>
+            
         </div>
     </section>
 
@@ -111,22 +110,19 @@
             <div class="s-box">
                 <img src="" alt="">
                 <h3>Selecciona tu curso</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum
-                    temporibus.</p>
+                
             </div>
             <!-- Box 2 -->
             <div class="s-box">
                 <img src="" alt="">
                 <h3>Clases 100% en linea</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum
-                    temporibus.</p>
+                
             </div>
             <!-- Box 3 -->
             <div class="s-box">
                 <img src="" alt="">
                 <h3>Certificaciones</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum
-                    temporibus.</p>
+                
             </div>
         </div>
     </section>

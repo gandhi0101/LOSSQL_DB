@@ -19,6 +19,7 @@
 <body>
     <!-- Navbar -->
     <header>
+        <img src="/src/Img/Logiin.png" alt="" srcset="">
         <a href="" class="logo">Data Developer</a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -59,6 +60,7 @@
                         <input type="password" name="password">
                     </p>
                     <p><label class="form-check-label" for="remember">Recordar</label></p>
+                    <a href="session/sign_in.php"> ya tienes cuenta?</a>
                     <p> <input class="remember" type="checkbox" name="remember"></p>
 
                     <p><input class="send" name="send" type="submit" value="Ingresar"> </p>
