@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    session_start();
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,11 +16,12 @@
 </head>
 
 <body>
-    <?php include("../layout/header.php"); ?>
+    
+    <?php  include("../layout/header.php"); ?>
 
     <!--formulario para pagar ;) -->
     <div class="pago">
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF'] . '?materia=' . $_GET['materia']; ?>" method="post">
             <p>numero de tarjeta</p>
             <input type="text" inputmode="numeric" name="numeroT"maxlength="16">
             <p>cvv</p>
@@ -32,7 +35,8 @@
         </form>
     </div>
     <?php
-    if (isset($_POST['enviar'])) {
+    
+    if (isset($_POST['enviar']) ) {
 
         if (strlen($_POST["numeroT"]) && strlen($_POST["cvv"]) && strlen($_POST["mm"])&& strlen($_POST["yy"])) {
 
@@ -42,7 +46,7 @@
                 setTimeout(function() {
                     console.log("I am the third log after 5 seconds");
                 }, 5000);
-                window.location.replace("examen.php");
+                window.location.replace("examen.php?materia=<?php echo $_GET['materia'];?>");
             </script>
     <?php
         } else {

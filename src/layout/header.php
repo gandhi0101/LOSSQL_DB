@@ -31,14 +31,14 @@
             <?php   if (!isset($_SESSION['email'])) {
             ?>
 
-                <li><a href="#" class="login">Iniciar sesión</a></li>
+                <li><a href="#login" class="login">Iniciar sesión</a></li>
 
             <?php 
             }  else {
 
                 ?>
                     <li><a href="sessions" ><?php echo $_SESSION['email'];  ?></a></li>
-                    <li><a href="sessions/logOut.php" ></a></li>
+                    <li><a href="sessions/logOut.php" >salir</a></li>
 
                 <?php
 
@@ -48,7 +48,7 @@
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
 
-        <div class="modal">
+        <div class="modal" id="#login">
             <div class="modal__container">
                 <h2 class="modal__title">¡Inicia Sesión!</h2>
                 <form class="form" action="sessions/verificacion.php" method="post">
@@ -69,6 +69,7 @@
 
         <script>
             const openModal = document.querySelector('.login');
+            
             const modal = document.querySelector('.modal');
             const closeModal = document.querySelector('.modal__close');
 

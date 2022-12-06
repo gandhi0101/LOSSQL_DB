@@ -1,13 +1,34 @@
 <?php
-$tipo = "php"; // aqui tmb lo podemos recibir por metodo post para especificar el tipo
+    session_start();
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+    <style>
+        .calif{
+            margin: 10% 0 0 60vh  ;
+            width: 90vh;
+        }
+    </style>
+</head>
+<body>
+<?php include("../layout/header.php"); ?>
+<div class="calif">
+    
+    
+<?php
+$tipo = $_POST['tipo']; // aqui tmb lo podemos recibir por metodo post para especificar el tipo
 $acum = 0.0;
 if($_POST){
     if(isset($_POST['enviar'])){ //recibimos todas las respuestas
         if($tipo == 'php'){
-      $res1 = $_POST['r1'];//cambiar por el folio perteneciente a la respuesta y/o pregunta
-      $res2 = $_POST['r2'];
-      $res3 = $_POST['r3'];
-      $res4 = $_POST['r4'];
+            $res1 = $_POST['r1'];//cambiar por el folio perteneciente a la respuesta y/o pregunta
+            $res2 = $_POST['r2'];
+            $res3 = $_POST['r3'];
+            $res4 = $_POST['r4'];
         }else if($tipo == 'c++'){
             $res1 = $_POST['r5'];//cambiar por el folio perteneciente a la respuesta y/o pregunta
             $res2 = $_POST['r6'];
@@ -27,7 +48,7 @@ if($_POST){
     }
 }
 //conectamos con la bd
-$servidor='localhost';
+/*$servidor='localhost';
 $cuenta='root';
 $password='root';
 $bd='bdcertificaciones';
@@ -35,9 +56,12 @@ $bd='bdcertificaciones';
 $conexion = new mysqli($servidor,$cuenta,$password,$bd);
 
 $sql = 'select * from examenes';
-$resultado = $conexion -> query($sql);
+$resultado = $conexion -> query($sql);*/
 
-if ($conexion->connect_errno){
+include("../../DataBase/Mysql/conections.php");
+                    $resultado = $db->query(getExamen());
+
+if ($db->connect_errno){
     die('Error en la conexion');
 }else{//conexion exitosa
     while( $fila = $resultado -> fetch_assoc()){
@@ -62,11 +86,15 @@ if ($conexion->connect_errno){
         $acum = $acum - 2.0;
     }
     $calif = ($acum * 10.0) / 4.0; //cambiar el 4.0 por el total de preguntas que se hacen
-    echo $calif;
     if($calif > 6.5){
-        echo 'Has acreditado el examen, tu calificación es :'.$calif;
+        echo '<h3 style="background-color: #0f0; text-align:center;">Has acreditado el examen,<br> tu calificación es :'.$calif.'</h3>';
+        
     }else{
-        echo 'Has reprobado el examen, tu calificación es :'.$calif;
+        echo '<h3 style="background-color: #0f0">Has reprobado el examen, tu calificación es :'.$calif.'</h3>';
     }
 }
 ?>
+</div>
+
+</body>
+</html>
